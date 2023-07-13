@@ -1,0 +1,4 @@
+readeable
+writeable
+duplex
+transform
