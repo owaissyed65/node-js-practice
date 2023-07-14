@@ -49,8 +49,8 @@
       const fetchPeople = async () => {
         try {
           const { data } = await axios.get('/api/people')
-
-          const people = data.data.map((person) => {
+          console.log(data)
+          const people = data?.map((person) => {
             return `<h5>${person.name}</h5>`
           })
           result.innerHTML = people.join('')
